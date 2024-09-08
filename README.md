@@ -9,11 +9,11 @@ The Multi-Select Search Component is a versatile React component designed to han
 To install the Multi-Select Search Component, you can use npm or yarn:
 
 ```bash
-npm install react-multi-select-search
+npm install react-search
 
 or
 
-yarn add react-multi-select-search
+yarn add react-search
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ Here is a basic example of how to use the Multi-Select Search Component in your 
 
 ```js
 import React, { useState } from 'react';
-import Search, { SearchSize } from 'react-multi-select-search';
+import Search, { SearchSize } from 'react-search';
 
 const App: React.FC = () => {
   const [data, setData] = useState<string[]>([]);
