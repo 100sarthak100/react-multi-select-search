@@ -1,0 +1,13 @@
+.root {
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cccccc;
+  padding-top: 200px;
+}
+
+.search-container {
+  width: 80%;
+}

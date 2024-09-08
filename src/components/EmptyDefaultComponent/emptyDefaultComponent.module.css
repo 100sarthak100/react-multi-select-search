@@ -1,0 +1,25 @@
+.emptyContainer {
+  display: flex;
+  flex-direction: column; /* Arrange icon and message vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Full height of the parent container */
+  width: 100%; /* Full width of the parent container */
+  border-radius: 5px; /* Optional rounded corners */
+  padding: 10px;
+}
+
+.iconContainer {
+  margin-bottom: 10px; /* Space between icon and message */
+}
+
+.icon {
+  font-size: 24px; /* Adjust size of the icon */
+  color: #888; /* Color of the icon */
+}
+
+.message {
+  font-size: 16px; /* Font size for the message */
+  color: #555; /* Font color for the message */
+  text-align: center; /* Center text */
+}

@@ -1,0 +1,14 @@
+.resultItem {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.resultItem:last-child {
+  border-bottom: none;
+}
+
+.resultItem:hover,
+.focusedItem {
+  background-color: #f0f0f0;
+}

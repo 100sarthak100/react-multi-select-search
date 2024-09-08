@@ -1,0 +1,53 @@
+.errorContainer {
+  display: flex;
+  align-items: center;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 16px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.errorContainer.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.errorIcon {
+  margin-right: 8px;
+}
+
+.leftContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 8px;
+}
+
+.iconContainer {
+  margin-right: 2px;
+}
+
+.messageContainer {
+  flex-wrap: wrap;
+}
+
+.dismissButton {
+  cursor: pointer;
+  font-size: 16px;
+  color: #721c24;
+  border: none;
+  background: none;
+}

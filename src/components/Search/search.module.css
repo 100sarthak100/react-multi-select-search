@@ -1,0 +1,139 @@
+.wrapperContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+  caret-color: #888;
+  flex: 1;
+}
+
+.input::placeholder {
+  color: #aaa; /* Placeholder text color */
+  font-size: 16px; /* Match placeholder font size with the input font size */
+  opacity: 1; /* Ensure placeholder is fully visible */
+}
+
+.resultsContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto; /* Vertical scrolling */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Border color */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  z-index: 10; /* Ensure it appears above other content */
+  padding: 0; /* Remove padding */
+  margin-top: 5px; /* Space between input and results list */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #e0e0e0;
+}
+
+/* Webkit Scrollbars */
+.resultsContainer::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.resultsContainer::-webkit-scrollbar-track {
+  background: #e0e0e0; /* Background color of the scrollbar track */
+  border-radius: 10px;
+}
+
+.resultsContainer::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.resultsContainer::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+/* Sizes */
+.wrapperContainer.small {
+  font-size: 12px;
+}
+
+.wrapperContainer.medium {
+  font-size: 14px;
+}
+
+.wrapperContainer.large {
+  font-size: 16px;
+}
+
+.searchContainer.small {
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.searchContainer.medium {
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.searchContainer.large {
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.input.small {
+  font-size: 12px;
+  padding: 6px 4px;
+}
+
+.input.medium {
+  font-size: 14px;
+  padding: 8px 6px;
+}
+
+.input.large {
+  font-size: 16px;
+  padding: 10px 8px;
+}
+
+.resultsContainer.small {
+  font-size: 12px;
+  max-height: 150px;
+  padding: 4px;
+}
+
+.resultsContainer.medium {
+  font-size: 14px;
+  max-height: 200px;
+  padding: 6px;
+}
+
+.resultsContainer.large {
+  font-size: 16px;
+  max-height: 250px;
+  padding: 8px;
+}
